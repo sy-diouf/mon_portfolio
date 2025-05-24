@@ -226,49 +226,49 @@ export const certifications: Certification[] = [
     title: 'Marketing Digital',
     issuer: 'FORCE N',
     date: '2023',
-    link: '/certifications/marketing-digital.pdf'
+    link: 'certifications/marketing-digital.pdf'
   },
   {
     id: 'cert-security',
     title: 'Cyber Sécurité',
     issuer: 'FORCE N',
     date: '2023',
-    link: '/certifications/cyber-securite.pdf'
+    link: 'certifications/cyber-securite.pdf'
   },
   {
     id: 'cert-frontend',
     title: 'Développement Front-End',
     issuer: 'FORCE N',
     date: '2024',
-    link: '/certifications/developpement-frontend.pdf'
+    link: 'certifications/developpement-frontend.pdf'
   },
   {
     id: 'cert-mobile',
     title: 'Développement Mobile',
     issuer: 'FORCE N',
     date: '2024',
-    link: '/certifications/developpement-mobile.pdf'
+    link: 'certifications/developpement-mobile.pdf'
   },
   {
     id: 'cert-ai',
     title: 'Intelligence Artificielle',
     issuer: 'FORCE N',
     date: '2042',
-    link: '/certifications/intelligence-artificielle.pdf'
+    link: 'certifications/intelligence-artificielle.pdf'
   },
   {
     id: 'cert-data',
     title: 'Traitements des données Avancées',
     issuer: 'FORCE N',
     date: '2024',
-    link: '/certifications/traitement-donnees-avancees.pdf'
+    link: 'certifications/traitement-donnees-avancees.pdf'
   },
   {
     id: 'cert-ethics',
     title: 'Haking Éthique',
     issuer: 'FORCE N',
     date: '2023',
-    link: '/certifications/ethique-digitale.pdf'
+    link: 'certifications/ethique-digitale.pdf'
   }
 ];
 

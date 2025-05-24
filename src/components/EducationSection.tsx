@@ -142,7 +142,7 @@ const EducationSection: React.FC = () => {
                     
                     <div className="mt-4 pt-4 border-t border-gray-100 dark:border-gray-700 flex justify-center">
                       <motion.a 
-                        href="/resume/CV_Serigne_Moustapha_Diouf.pdf" 
+                        href="resume/CV_Serigne_Moustapha_Diouf.pdf" 
                         download
                         className="flex items-center px-4 py-2 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white rounded-lg shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1"
                         whileHover={{ scale: 1.05 }}
