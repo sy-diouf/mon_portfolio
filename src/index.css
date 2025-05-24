@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+  }
+
+  body {
+    @apply text-gray-800 dark:text-gray-200;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  .section-title {
+    @apply text-2xl font-bold mb-8 relative inline-block;
+  }
+  
+  .section-title::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 bg-primary-500 rounded-full transform -translate-y-2;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-md font-medium transition-all duration-300 transform hover:scale-105;
+  }
+
+  .btn-primary {
+    @apply bg-primary-500 text-white hover:bg-primary-600;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-500 text-white hover:bg-secondary-600;
+  }
+
+  .btn-outline {
+    @apply border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-white dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-400 dark:hover:text-gray-900;
+  }
+
+  .card {
+    @apply bg-white dark:bg-gray-800 rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 rounded-md bg-gray-100 dark:bg-gray-800 border border-gray-300 dark:border-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-500 dark:focus:ring-primary-400 transition-all duration-300;
+  }
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-500 to-secondary-500 dark:from-primary-400 dark:to-secondary-400;
+}
+
+.bg-gradient {
+  @apply bg-gradient-to-r from-primary-500 to-secondary-500 dark:from-primary-400 dark:to-secondary-400;
+}
+
+.animated-bg {
+  background: linear-gradient(-45deg, #0066ff, #00afaf, #ff8000, #0052cc);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* Dark Mode Toggle Animation */
+.sun-moon {
+  @apply relative w-6 h-6 transition-all duration-500;
+}
+
+.sun-moon .sun {
+  @apply absolute inset-0 text-yellow-400 transition-all duration-500 ease-in-out;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.sun-moon .moon {
+  @apply absolute inset-0 text-slate-200 transition-all duration-500 ease-in-out;
+  transform: scale(0) rotate(-90deg);
+  opacity: 0;
+}
+
+.dark .sun-moon .sun {
+  transform: scale(0) rotate(90deg);
+  opacity: 0;
+}
+
+.dark .sun-moon .moon {
+  transform: scale(1) rotate(0);
+  opacity: 1;
+}
